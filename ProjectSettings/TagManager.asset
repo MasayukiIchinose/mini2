@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Enemy(small)
+  - Boss
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Player
+  - Bullet(p)
+  - Enemy
+  - Bullet(e)
+  - Bullet(ep)
+  - DestroyArea
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Enemy
+    uniqueID: 2396585159
+    locked: 0
+  - name: Bullet(ep)
+    uniqueID: 3162872173
+    locked: 0
+  - name: Bullet(e)
+    uniqueID: 1039393435
+    locked: 0
+  - name: Player
+    uniqueID: 1033860565
+    locked: 0
+  - name: Bullet(p)
+    uniqueID: 596145391
+    locked: 0
+  - name: New Layer
+    uniqueID: 3380776929
+    locked: 0
