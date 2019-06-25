@@ -799,7 +799,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "git\u66F4\u65B0\u30C6\u30B9\u30C8"
+  m_Text: "git\u66F4\u65B0\u30C6\u30B9\u30C82"
 --- !u!222 &1318733923
 CanvasRenderer:
   m_ObjectHideFlags: 0
