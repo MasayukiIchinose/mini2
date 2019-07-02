@@ -52,11 +52,11 @@ public class Player : MonoBehaviour
         if (layerName == "Bullet(e)" || layerName == "Enemy")
         {
             // 爆発する
- //           unit.Explosion();
+            //           unit.Explosion();
 
             // プレイヤーを削除
-            Destroy(gameObject);
             GameObject.Find("HPController").GetComponent<ScoreManager>().backScene();
+            Destroy(gameObject);
         }
     }
     void Clamp()

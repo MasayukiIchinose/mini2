@@ -278,6 +278,7 @@ GameObject:
   - component: {fileID: 378030722}
   - component: {fileID: 378030721}
   - component: {fileID: 378030720}
+  - component: {fileID: 378030723}
   m_Layer: 0
   m_Name: HPController
   m_TagString: Untagged
@@ -318,12 +319,27 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 378030719}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 421.5, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &378030723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 378030719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 295a94e6f7fc0ec46be5993bce991c62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fade: {fileID: 4489619548880664875, guid: 601e79e7ffdffac4b883a5f2cfdf74f8, type: 3}
+  start_fade: 1
+  fade_time: 0.5
 --- !u!1 &410796767
 GameObject:
   m_ObjectHideFlags: 0

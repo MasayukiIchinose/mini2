@@ -375,6 +375,7 @@ GameObject:
   - component: {fileID: 1334666495}
   - component: {fileID: 1334666493}
   - component: {fileID: 1334666491}
+  - component: {fileID: 1334666492}
   m_Layer: 10
   m_Name: Boss
   m_TagString: Untagged
@@ -396,6 +397,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 1
   explosion: {fileID: 0}
+--- !u!114 &1334666492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1334666490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 108f91c6b12c6304282131ff59c5c601, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 1000
+  bullets1: {fileID: 5560277134677392604, guid: 79199d71d45f1e5448f2e4bb93028ee7,
+    type: 3}
+  bullets1_: {fileID: 1215182064874125349, guid: bde6f48614b07e445a505bff61d6f49a,
+    type: 3}
+  bullets2: {fileID: 3606207650609721428, guid: 75ae77d7aeb64964680fc17702ff6297,
+    type: 3}
+  bullets2_: {fileID: 2778510402983152190, guid: 4a31d562e265f174e8b761f2a8724539,
+    type: 3}
+  bullets3: {fileID: 2204329315666730455, guid: 6b8c5ac1494a47f46942078bd627a459,
+    type: 3}
 --- !u!60 &1334666493
 PolygonCollider2D:
   m_ObjectHideFlags: 0

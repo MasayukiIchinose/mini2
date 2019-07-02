@@ -8,15 +8,26 @@ public class ScoreManager : MonoBehaviour
 {
     private float starttime;
     private float scoretime;
+    private bool flag = false;
+    private float timer;
 
     // Start is called before the first frame update
     void Start()
     {
         starttime = Time.time;
+
     }
     // Update is called once per frame
     void Update()
     {
+        if (flag)
+        {
+            if (Time.time - timer > 1.0f)
+            {
+                string STAGE_NAME = SceneManager.GetActiveScene().name.Replace("Stage_", "");
+                SceneManager.LoadScene("Score_" + STAGE_NAME.Replace("_hard", ""));
+            }
+        }
     }
     public void setScore()
     {
@@ -33,10 +44,12 @@ public class ScoreManager : MonoBehaviour
 
         Debug.Log("SET "+STAGE_NAME + "_SCORE->" + PlayerPrefs.GetFloat(STAGE_NAME + "_SCORE"));
         Debug.Log("SET "+STAGE_NAME + "_CLEAR->" + PlayerPrefs.GetFloat(STAGE_NAME + "_CLEAR"));
+        flag = true;
+        timer = Time.time;
     }
     public void backScene()
     {
-        string STAGE_NAME = SceneManager.GetActiveScene().name.Replace("Stage_", "");
-        SceneManager.LoadScene("Score_" + STAGE_NAME.Replace("_hard",""));
+        flag = true;
+        timer = Time.time;
     }
 }
