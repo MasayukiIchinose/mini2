@@ -9,6 +9,7 @@ public class Stage1_enemy1_hard : MonoBehaviour
     public int lifeTime = 15;
     public int speed = 1;
     public int hp = 5;
+    
 
     IEnumerator Start()
     {
@@ -17,6 +18,7 @@ public class Stage1_enemy1_hard : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(interval);
+            if(GameObject.Find("player")!=null)
             Instantiate(bullets, gameObject.transform.position, ga.getAimQua(gameObject.transform.position, GameObject.Find("player").transform.position));
         }
     }

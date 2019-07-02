@@ -34,7 +34,8 @@ public class Stage1_Boss_hard : MonoBehaviour
             yield return new WaitForSeconds(0.4f);
             Instantiate(ballets1_4, gameObject.transform.position, Quaternion.identity);
             yield return new WaitForSeconds(0.4f);
-            Instantiate(ballets1_5, gameObject.transform.position, ga.getAimQua(gameObject.transform.position, GameObject.Find("player").transform.position));
+            if (GameObject.Find("player") != null)
+                Instantiate(ballets1_5, gameObject.transform.position, ga.getAimQua(gameObject.transform.position, GameObject.Find("player").transform.position));
             if (reset == 1)
             {
                 count = 0;
