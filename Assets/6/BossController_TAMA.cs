@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BossController : MonoBehaviour
+public class BossController_TAMA : MonoBehaviour
 {
     //一撃当たり受けるダメージ量
     //本来なら弾の威力で渡したかった…

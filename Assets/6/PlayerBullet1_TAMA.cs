@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerBullet1 : MonoBehaviour
+public class PlayerBullet1_TAMA : MonoBehaviour
 {
     int rotateSpeed = -10;
     void Update()

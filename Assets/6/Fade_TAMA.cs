@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Fade : MonoBehaviour
+public class Fade_TAMA : MonoBehaviour
 {
     public GameObject fade = null;
     public bool start_fade = false;

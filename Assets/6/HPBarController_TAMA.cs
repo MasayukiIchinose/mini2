@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class HPBarController : MonoBehaviour
+public class HPBarController_TAMA : MonoBehaviour
 {
 
     GameObject boss;

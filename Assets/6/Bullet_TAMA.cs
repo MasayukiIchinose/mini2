@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class Bullet : MonoBehaviour
+public class Bullet_TAMA : MonoBehaviour
 {
     // 弾の移動スピード
     public int speed = 10;

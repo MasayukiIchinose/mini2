@@ -1,7 +1,7 @@
 ﻿
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController_TAMA : MonoBehaviour
 {
     Vector2 mousePos1;
     Vector2 mousePos2;

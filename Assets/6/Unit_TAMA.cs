@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
-public class Unit: MonoBehaviour
+public class Unit_TAMA: MonoBehaviour
 {
     // 移動スピード
     public float speed;
