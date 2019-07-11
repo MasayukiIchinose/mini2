@@ -27,13 +27,13 @@ EditorBuildSettings:
     path: Assets/1/Scene/Stage_1_hard.unity
     guid: 5624980823d8b5840a03181bd4c24c94
   - enabled: 1
-    path: Assets/2/Score_2.unity
+    path: Assets/2/tokuke/Scene/Score_2.unity
     guid: 17182a03a1386434789023dc9938a053
   - enabled: 1
-    path: Assets/2/Stage_2.unity
+    path: Assets/2/tokuke/Scene/Stage_2.unity
     guid: 7c77fba7ff9e9c04f96a1d68e1ecdca2
   - enabled: 1
-    path: Assets/2/Stage_2_hard.unity
+    path: Assets/2/tokuke/Scene/Stage_2_hard.unity
     guid: 4d553d442973a9f45a83f99566bac755
   - enabled: 1
     path: Assets/6/Stage_6_hard.unity

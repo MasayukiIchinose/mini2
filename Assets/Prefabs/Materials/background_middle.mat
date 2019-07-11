@@ -43,6 +43,10 @@ Material:
         m_Texture: {fileID: 2800000, guid: 56aab8f3785584bccbddbf103c08f3d1, type: 3}
         m_Scale: {x: 1, y: 1}
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        m_Offset: {x: 0, y: 0.016138792}
+>>>>>>> 6a23c1ecb7536c28a8e1e9441a41fdba71182de0
 =======
         m_Offset: {x: 0, y: 0.4777869}
 >>>>>>> 2ba6eb0fd1e9be18c3939b0367ce1d49414411b2
