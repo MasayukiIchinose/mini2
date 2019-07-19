@@ -27,6 +27,7 @@ public class Stage5_Boss : MonoBehaviour
     public bool isFuncBool = false;
     public bool isLRAttack = false;
     public bool isSAttack = false;
+    bool SAttackFlag = false;
 
     IEnumerator Start()
     {
@@ -36,7 +37,7 @@ public class Stage5_Boss : MonoBehaviour
         speed = 1.0f;
         radius = 1f;
         posY = transform.position.y;
-
+        
         while (true)
         {
             yield return new WaitForSeconds(0.01f);
@@ -46,22 +47,35 @@ public class Stage5_Boss : MonoBehaviour
                 continue;
 
 
-            //if (hpbc.rehp() <= 900)
+            if (hpbc.rehp() <= 900)
                 baseDir = Random.Range(0, 4);
             //Ai1
+
+            if(baseDir<2)
             yield return BaseBullet();
 
             if (isSAttack)
                 continue;
 
-            if (baseDir == 2)
-            yield return (StltAttack());
+            if (baseDir == 2&&!SAttackFlag)
+            {
+                SAttackFlag = true;
+                yield return StltAttack();
+            }
+            else
+            {
+                yield return BaseBullet();
+            }
 
 
             if (baseDir == 3)
-            yield return LrotAttack();
+            {
+                yield return LrotAttack();
+                SAttackFlag = false;
+            }
 
         }
+
     }
 
     IEnumerator BaseBullet()

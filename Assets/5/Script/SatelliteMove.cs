@@ -40,7 +40,7 @@ public class SatelliteMove : MonoBehaviour
         while (true)
         {
             
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(0.1f);
             if (isSAMove == true)
             {
                 yield return SAMove();
@@ -105,7 +105,6 @@ public class SatelliteMove : MonoBehaviour
             transform.localPosition = Vector3.Lerp(transform.localPosition, pastPosition, Time.deltaTime * 2.0f / distance);
             yield return new WaitForSeconds(0.01f);
         }
-        Debug.Log("a");
 
         transform.parent.GetComponent<Stage5_Boss>().isSAttack = false;
     }
