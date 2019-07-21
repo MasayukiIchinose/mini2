@@ -6,11 +6,11 @@ public class PlayerController_TAMA : MonoBehaviour
     Vector2 mousePos1;
     Vector2 mousePos2;
     Vector2 movePos;
-    Unit unit;
+    Unit_TAMA unit;
    
     void Start()
     {
-        unit = GetComponent<Unit>();
+        unit = GetComponent<Unit_TAMA>();
         this.mousePos1 = Input.mousePosition;
     }
     

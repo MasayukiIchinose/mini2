@@ -3,12 +3,12 @@ using System.Collections;
 
 public class Player_TAMA : MonoBehaviour
 {
-    Unit unit;
+    Unit_TAMA unit;
 
     IEnumerator Start()
     {
         // Spaceshipコンポーネントを取得
-        unit = GetComponent<Unit>();
+        unit = GetComponent<Unit_TAMA>();
 
         while (true)
         {
