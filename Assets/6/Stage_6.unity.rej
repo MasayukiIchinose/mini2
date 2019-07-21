@@ -1,0 +1,9 @@
+diff a/Assets/6/Stage_6.unity b/Assets/6/Stage_6.unity	(rejected hunks)
+@@ -863,6 +863,7 @@
+   m_Script: {fileID: 11500000, guid: d88b2ebae450b114fa92028af6fb088e, type: 3}
+   m_Name: 
+   m_EditorClassIdentifier: 
++  maxhp: 100
+ --- !u!4 &1762438358
+ Transform:
+   m_ObjectHideFlags: 0
