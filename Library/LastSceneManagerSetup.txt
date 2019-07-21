@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/5/Stage_5.unity
+- path: Assets/6/Score_6.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
