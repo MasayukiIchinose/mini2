@@ -43,10 +43,10 @@ GameObject:
   m_Component:
   - component: {fileID: 5234288580621755316}
   - component: {fileID: 7192604803340392572}
-  - component: {fileID: 1033799208435218658}
   - component: {fileID: 6213769347529129710}
   - component: {fileID: 5682027657512809881}
-  m_Layer: 0
+  - component: {fileID: 755973013822061324}
+  m_Layer: 11
   m_Name: danmaku_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60,13 +60,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1700081631912692465}
-  m_LocalRotation: {x: 0, y: -0, z: 0.9848078, w: -0.17364809}
+  m_LocalRotation: {x: 0, y: -0, z: 0.9396927, w: -0.3420201}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 7359195279881108248}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 200}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 220}
 --- !u!212 &7192604803340392572
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -116,21 +116,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1033799208435218658
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1700081631912692465}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 070b2f5363e062e4a89f952fbfcf5566, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  lifeTime: 5
-  rad: 0
 --- !u!58 &6213769347529129710
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -168,6 +153,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &755973013822061324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1700081631912692465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9131f84a94834a4cae6ebb166ec3fb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+  lifeTime2: 4
+  rad: 0
 --- !u!1 &7397675304566397309
 GameObject:
   m_ObjectHideFlags: 0
@@ -178,10 +178,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2869423147443829084}
   - component: {fileID: 9024698762538078878}
-  - component: {fileID: 5458106417874129454}
   - component: {fileID: 2544079359028979892}
   - component: {fileID: 1198086634408055218}
-  m_Layer: 0
+  - component: {fileID: 5371543940942332087}
+  m_Layer: 11
   m_Name: danmaku_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -251,21 +251,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5458106417874129454
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7397675304566397309}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 070b2f5363e062e4a89f952fbfcf5566, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  lifeTime: 5
-  rad: 0
 --- !u!58 &2544079359028979892
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -294,7 +279,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.0001
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -303,6 +288,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &5371543940942332087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7397675304566397309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9131f84a94834a4cae6ebb166ec3fb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+  lifeTime2: 4
+  rad: 0
 --- !u!1 &8763782150714993043
 GameObject:
   m_ObjectHideFlags: 0
@@ -313,10 +313,10 @@ GameObject:
   m_Component:
   - component: {fileID: 3914418964111455526}
   - component: {fileID: 8168995570688405433}
-  - component: {fileID: 6089173847481462370}
   - component: {fileID: 6752171510115765971}
   - component: {fileID: 3911290413123446029}
-  m_Layer: 0
+  - component: {fileID: 1774134559335656336}
+  m_Layer: 11
   m_Name: danmaku_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -330,13 +330,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8763782150714993043}
-  m_LocalRotation: {x: 0, y: 0, z: 0.9848078, w: 0.17364825}
+  m_LocalRotation: {x: 0, y: 0, z: 0.9396927, w: 0.34202018}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 7359195279881108248}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 160}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 140}
 --- !u!212 &8168995570688405433
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -386,21 +386,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6089173847481462370
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8763782150714993043}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 070b2f5363e062e4a89f952fbfcf5566, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  lifeTime: 5
-  rad: 0
 --- !u!58 &6752171510115765971
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -438,3 +423,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1774134559335656336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8763782150714993043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9131f84a94834a4cae6ebb166ec3fb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+  lifeTime2: 3
+  rad: 0

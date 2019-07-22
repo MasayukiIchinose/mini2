@@ -753,18 +753,18 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 45
+    m_FontSize: 60
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 45
+    m_MaxSize: 60
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Ghan\u304B\u3089\u306E\u6311\u6226\u72B6\n"
+  m_Text: "\u9006\u8972\uFF01\u702C\u6238\u5185\u6D77\u304B\u3089\u306E\u523A\u5BA2"
 --- !u!222 &882876461
 CanvasRenderer:
   m_ObjectHideFlags: 0

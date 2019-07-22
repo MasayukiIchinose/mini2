@@ -11,22 +11,17 @@ public class Stage2_boss : MonoBehaviour
     public float huguSpeed=0.01f;
     public float judge = -1.0f;
     public int stageJudge = 1;
+    
     Slider hpslider;
     
    
 
     public int hp = 10000;
     public GameObject doku;
-    public GameObject doku2;
+    public GameObject mizu;
 
     public float huguy;
-    /*
-    public GameObject ballets1_4;
-    public GameObject ballets1_5;
-    public GameObject ballets2_1;
-    public GameObject ballets2_2;
-    public GameObject denger;
-    */
+   
 
     private HPBarController hpbc;
 
@@ -39,35 +34,19 @@ public class Stage2_boss : MonoBehaviour
          yield return new WaitForSeconds(0.5f);
         hpbc = GameObject.Find("HPController").GetComponent<HPBarController>();
         int count = count_max;
-        GetAim ga = new GetAim();
-        Debug.Log(stageJudge);
-        
-        while (true)
-        {
-           // Debug.Log(stageJudge);
-        yield return new WaitForSeconds(1f); if (stageJudge == 2) { break; }
-         Instantiate(doku, gameObject.transform.position, ga.getAimQua(gameObject.transform.position, GameObject.Find("player").transform.position));
-        yield return new WaitForSeconds(1f); if (stageJudge == 2) { break; }
-        Instantiate(doku, gameObject.transform.position, ga.getAimQua(gameObject.transform.position, GameObject.Find("player").transform.position));
-        yield return new WaitForSeconds(1f); if (stageJudge == 2) { break; }
-        Instantiate(doku, gameObject.transform.position, ga.getAimQua(gameObject.transform.position, GameObject.Find("player").transform.position));
-        }
-        
-        while (true)
-        {
-            yield return new WaitForSeconds(1f);
-            Instantiate(doku2, gameObject.transform.position, ga.getAimQua(gameObject.transform.position, GameObject.Find("player").transform.position));
-            if (stageJudge == 3) { break; }
-        }
-       
+
+        yield return StartCoroutine(Wave1());
+        yield return StartCoroutine(Wave2());
+        yield return StartCoroutine(Wave3());
+
     }
     void Update()
     {
-        if (hpslider.value<=700&& hpslider.value >= 300)
+        if (hpslider.value<=700&& hpslider.value >= 400)
         {
             stageJudge = 2;
         }
-        if (hpslider.value <300)
+        if (hpslider.value <400)
         {
             stageJudge = 3;
         }
@@ -93,15 +72,53 @@ public class Stage2_boss : MonoBehaviour
             }
             yield return null;
         }
+        
+    }
+    public IEnumerator Wave1()
+    {
+        GetAim ga = new GetAim();
         while (true)
         {
-          
-            Vector3 tmp = GameObject.Find("player").transform.position;
-            Vector3 tmp2 = GameObject.Find("boss").transform.position;
-            Debug.Log(tmp.x);
-            transform.position = Vector3.MoveTowards(transform.position, new Vector3(tmp.x,tmp2.y,tmp2.z), 3.0f);
-            yield return new WaitForSeconds(1f);
+            // Debug.Log(stageJudge);
+            yield return new WaitForSeconds(1f); if (stageJudge == 2) { break; }
+            Instantiate(doku, gameObject.transform.position, ga.getAimQua(gameObject.transform.position, GameObject.Find("player").transform.position));
+            yield return new WaitForSeconds(1f); if (stageJudge == 2) { break; }
+            Instantiate(doku, gameObject.transform.position, ga.getAimQua(gameObject.transform.position, GameObject.Find("player").transform.position));
+            yield return new WaitForSeconds(1f); if (stageJudge == 2) { break; }
+            Instantiate(doku, gameObject.transform.position, ga.getAimQua(gameObject.transform.position, GameObject.Find("player").transform.position));
         }
     }
+    public IEnumerator Wave2()
+    {
+        
+        while (true)
+        {
+            if (stageJudge == 3) { break; }
+            yield return new WaitForSeconds(1f);
+            //Instantiate(doku2, gameObject.transform.position, ga.getAimQua(gameObject.transform.position, GameObject.Find("player").transform.position));
+        }
+        Debug.Log("呼ばれた");
+    }
+    public IEnumerator Wave3()
+    {
+        GetAim ga = new GetAim();
+        int time = 0;
+        
+        //Debug.Log("呼ばれた2");
+        while (true) {
+            time = 0;
+            Vector3 tmp = GameObject.Find("player").transform.position;
+            Vector3 tmp2 = GameObject.Find("boss").transform.position;
+            yield return new WaitForSeconds(1f);
+            transform.position = Vector3.MoveTowards(transform.position, new Vector3(tmp.x, tmp2.y, tmp2.z), 3.0f);
+            
+            while (time<=40) {
+                Instantiate(mizu, gameObject.transform.position, ga.getAimQua(gameObject.transform.position, GameObject.Find("player").transform.position));
+                time += 1;
+                yield return new WaitForSeconds(0.1f);
+            }
+        }
+    }
+
 }
    

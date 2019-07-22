@@ -9,6 +9,7 @@ public class mizuDanmaku : MonoBehaviour
     public float lifeTime = 5;
     public float rad = 0;
     public int mizujudge;
+    public int mizujudge2;
     public Stage2_boss stage2_mizu;
     public GameObject hugu;
     public Transform m_target = null;
@@ -23,8 +24,8 @@ public class mizuDanmaku : MonoBehaviour
          m_target = hugu.GetComponent<Transform>();
         mizujudge=hugu.GetComponent<Stage2_boss>().stageJudge;
        
-       
-         if (mizujudge == 1)
+
+        if (mizujudge == 1)
          {
 
              // ローカル座標のY軸方向に移動する

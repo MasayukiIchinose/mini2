@@ -2974,7 +2974,7 @@ GameObject:
   - component: {fileID: 2091442390}
   - component: {fileID: 2091442391}
   - component: {fileID: 2091442392}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: boss
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3081,7 +3081,8 @@ MonoBehaviour:
   stageJudge: 0
   hp: 10000
   doku: {fileID: 156819302565839852, guid: 1bbade4e77a75fb4a97daf9a3accc9c3, type: 3}
-  doku2: {fileID: 0}
+  mizu: {fileID: 8545446167695653099, guid: 1f7b6f954167465429cde719a42c49b1, type: 3}
+  huguy: 0
 --- !u!58 &2091442391
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3092,7 +3093,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -3110,5 +3111,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5dc5190380612c49b2f6be761a35a63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
+  damage: 8
   explosion: {fileID: 0}
