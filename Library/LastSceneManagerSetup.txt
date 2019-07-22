@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/2/tokuke/Scene/Stage_2_hard.unity
+=======
+- path: Assets/6/Score_6.unity
+>>>>>>> 9f6263c91dc98ccb6638f8f1e135758635d0ee78
   isLoaded: 1
   isActive: 1
   isSubScene: 0
